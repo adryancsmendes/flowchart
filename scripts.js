@@ -125,6 +125,46 @@ document.addEventListener("DOMContentLoaded", function() {
             </ul>
             <p>If you experience any of these symptoms, you will need to come back to the emergency room ASAP to be evaluated by our team. We will do blood tests and a CT scan to check the connection.</p>
             <p>If the hole in your connection is small, then antibiotics is usually the only treatment that is needed. This is because of your temporary stoma diverting all stool away from the connection (i.e., no stool reaches the connection).</p>
+            </div>`,
+            anastomoticLeak: `
+            <div class="modal-text">
+            <h2>Anastomotic Leak</h2>
+            <p>Whenever we remove a piece of your intestine and make an anastomosis (i.e., connection), we will use staples and sutures to make the connection. Your body has to then heal around this connection.</p>
+            <p>In about 10-15% of patients, the healing will be incomplete and an anastomotic leak (i.e., hole in the connection) will develop. This usually happens around 1-2 weeks after surgery.</p>
+            <p>Symptoms may include:</p>
+            <ul>
+                <li>Fever</li>
+                <li>Abdominal pain</li>
+                <li>Nausea and vomiting</li>
+                <li>Pus draining from your anus</li>
+            </ul>
+            <p>If you experience any of these symptoms, you will need to come back to the emergency room ASAP to be evaluated by our team. We will do blood tests and a CT scan to check the connection.</p>
+            <p>If the hole in your connection is small, then antibiotics is usually the only treatment that is needed. This is because of your temporary stoma diverting all stool away from the connection (i.e., no stool reaches the connection).</p>
+            </div>
+        `,
+        temporaryStoma: `
+            <div class="modal-text">
+            <h2>Temporary Stoma</h2>
+            <p>We will be making a temporary stoma bag as part of your surgery. We do this to protect your anastomosis (i.e., bowel connection) because it is at higher risk of non-healing (i.e., anastomotic leak) due to the radiation. You will keep this temporary stoma bag for at least 3 months to let your connection heal and for you to recover from your operation. You may need to keep the stoma bag longer if your connection does not heal fully, or if you need more treatments for your cancer after your surgery.</p>
+            <p>You will meet the stoma nurse and receive some teaching about your stoma (how it works, how to change it, how to care for it, etc.) before your surgery. After your surgery, you will also have regular follow-ups with the stoma nurse.</p>
+            <p>The government of Quebec will reimburse part of your stoma bag costs (about 800$ per year). Depending on how long you keep your stoma, patients may have to pay up to $1000 more per year out of their own pockets to cover the remaining costs. If you have private insurance, it is likely they will also reimburse part of these costs.</p>
+            <p>You will need to have another surgery to close the stoma bag when it is appropriate. It is important to know that once your stoma bag is closed and you start having bowel movements again, you are likely to have major issues with your bowel habits</p>
+            </div>
+        `,
+        genitounaryDysfunction: `
+            <div class="modal-text">
+            <h2>Genitounary Dysfunction</h2>
+            <p>About 30% of patients will have issues with their sexual and urinary function after surgery. This is because all of these nerves are exactly where we need to operate. These nerves are often too small to be seen and can be damaged during surgery. These symptoms can be permanent and may have a major negative impact on your activities and quality of life.</p>
+            <p>Urinary function: You can be either difficulty urinating or urinating too much without control.</p>
+            <p>Sexual function</p>
+            <ul>
+                <li>Men: Erectile dysfunction (difficulty having erections) or retrograde ejaculations (cannot ejaculate). If this occurs, the problem is usually caused by nerve damage, and medications such as Viagra or Cialis are not very effective.</li>
+                <li>Think about sperm banking if you are still planning on having children in the future</li>
+            </ul>
+            <ul>
+                <li>Women: dyspareunia (pain with sexual intercourse), vaginal dryness, vaginal stricture (abnormal tightening)</li>
+                <li>Think about egg banking if you are still planning on having children in the future</li>
+            </ul>
             </div>
         `
     };

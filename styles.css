@@ -26,16 +26,17 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    gap:15px;
+    gap:25px;
     width: 40%;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     align-items: center;
-    padding: 15px;
+    padding: 30px 15px;
     min-height: 665px;
-    justify-content: space-between;
+    max-height:665px;
+    justify-content: flex-start;
 }
 
 .header-wrapper{
@@ -53,7 +54,6 @@ body {
     text-align: center;
     font-weight: bold;
     border-radius: 5px;;
-    margin:15px 0;
 }
 .tabs {
     display: flex;
@@ -106,6 +106,8 @@ body {
 }
 .downsides-wrapper__btns{
     display: flex;
+    max-width:450px;
+    flex-wrap: wrap;
     gap:10px;
 }
 .button {
@@ -374,7 +376,7 @@ body {
     max-height:600px;
 }
 
-.modal-text p{
+.modal-text p, .modal-text ul{
     margin-block-start: 1em;
     margin-block-end: 1em;
 }
