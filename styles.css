@@ -73,6 +73,9 @@ body {
     background-color: #003366;;
     border-radius: 5px;
 }
+.tab:hover{
+    background-color: #2e73e2;
+}
 .tab.active {
     background-color: #2e73e2;
 }
