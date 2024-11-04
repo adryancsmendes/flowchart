@@ -188,3 +188,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Show the text bubble
+    const tooltip = document.getElementById("tooltip");
+    tooltip.style.display = "flex";
+    tooltip.style.opacity = "1";
+
+    // Hide the bubble after 3 seconds
+    setTimeout(function () {
+        tooltip.style.opacity = "0";
+        setTimeout(function () {
+            tooltip.style.display = "none";
+        }, 500); // Wait half a second to hide after the animation
+    }, 3000); // Time the bubble will be visible
+});
