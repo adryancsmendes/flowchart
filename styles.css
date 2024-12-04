@@ -34,7 +34,7 @@ body {
     overflow: hidden;
     align-items: center;
     padding: 30px 15px;
-    height:665px;
+    overflow-y: auto;
     justify-content: flex-start;
 }
 
@@ -93,6 +93,7 @@ body {
     height:100%;
     font-weight: 600;
     overflow-y: auto;
+    min-height:300px;
 }
 .downsides-wrapper {
     width:100%;
@@ -442,15 +443,15 @@ body {
 #incomplete-response { top: 250px; right: 0%; }
 #surgery { top: 320px; right: 0;}
 #second-surgery { top: 450px; left:50%; transform: translate(-50%); z-index:3;}
-#surgery-lar { top: 375px; right:0; max-width:145px;}
-#surgery-apr { top: 375px; right: 150px;max-width:145px;}
+#surgery-lar { top: 375px; right:2.5px; max-width:145px;}
+#surgery-apr { top: 375px; right: 147.5px;max-width:145px;}
 
 #second-surgery-lar { max-width:145px; position: relative;}
 #second-surgery-apr { max-width:145px; position: relative;}
 
 .surgery-wrapper{
     width:100%;
-    max-width: 295px;
+    max-width: 290px;
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -537,7 +538,9 @@ body {
     background-color: #fff;
     border-radius: 8px;
 }
-
+#modal-text, #modal-text .container{
+    height:100%;
+}
 .modal-text p, .modal-text ul, .new-modal-text p, .new-modal-text ul {
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -564,6 +567,12 @@ body {
     padding-bottom: 40px;
 }
 
+@media screen and (min-width:992px){
+    .modal-content{
+        height:80vh
+    }
+}
+
 @media screen and (max-width:992px){
     .flowchart{
         max-width:480px;
@@ -588,7 +597,7 @@ body {
         line-height:1.05;
     }
     .surgery-wrapper{
-        max-width:155px;
+        max-width:150px;
     }
     #surgery-apr, #surgery-lar, #second-surgery-apr, #second-surgery-lar{
         max-width:75px;
@@ -600,8 +609,11 @@ body {
         top:330px;
     }
     #surgery-apr{
-        right:80px;
+        right:78px;
         top:390px;
+    }
+    #surgery-lar{
+        right:3px;
     }
     #tumor-regrowth, #surgery-lar{
         top:390px;
@@ -636,7 +648,7 @@ body {
         right:2%
     }
     #surgery-apr{
-        top:460px;
+        top:450px;
         right:2%;
     }
 }
