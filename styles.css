@@ -226,7 +226,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 48px 12px;
+    padding: 24px 12px;
     box-shadow: 0 -1px 0 1px #00000025;
 }
 
@@ -360,6 +360,26 @@ body {
     50% { border-color: #0C3569; }
 }
 
+.very-dark-blue{
+    background-color: #082345;
+    color:#fff;
+    border-color: #082345;
+}
+
+.very-dark-blue:hover{
+    background-color: #0e3a70;
+}
+
+.box.very-dark-blue.active{
+    background-color: #0e3a70;
+    animation: blink-very-dark-blue 1s step-start infinite;
+}
+
+@keyframes blink-very-dark-blue {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #082345; }
+}
+
 .green {
     background-color: #028213;
     color: white;
@@ -413,17 +433,31 @@ body {
 /* Posições específicas para cada botão */
 #complete-response { top: 250px; left: 0; }
 #second-complete-response { top: 250px; left: 50%; transform: translate(-50%); }
-#persistent-response { top: 350px; left: 0; }
-#tumor-regrowth { top: 450px; left: 50%; transform: translate(-50%); z-index:3;}
+#persistent-response { top: 320px; left: 0; }
+#tumor-regrowth { top: 380px; left: 50%; transform: translate(-50%); z-index:3;}
 #metastatic-spread { top: -100px; left: 0; display:none;}
-#regular-followups{ top:450px;}
-#no-surgery-needed-initially { top:350px; left:50%; transform: translate(-50%);}
+#regular-followups{ top:380px;}
+#no-surgery-needed-initially { top:320px; left:50%; transform: translate(-50%);}
 
 #incomplete-response { top: 250px; right: 0%; }
-#surgery { top: 350px; right: 0;}
-#second-surgery { top: 550px; left:50%; transform: translate(-50%); z-index:3;}
-#surgery-lar { top: -100px; left: 25%; display:none;}
-#surgery-apr { top: -100px; left: 50%; display:none;}
+#surgery { top: 320px; right: 0;}
+#second-surgery { top: 450px; left:50%; transform: translate(-50%); z-index:3;}
+#surgery-lar { top: 400px; right:0; max-width:145px;}
+#surgery-apr { top: 400px; right: 150px;max-width:145px;}
+
+#second-surgery-lar { max-width:145px; position: relative;}
+#second-surgery-apr { max-width:145px; position: relative;}
+
+.surgery-wrapper{
+    width:100%;
+    max-width: 295px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    top:530px;
+}
 /* Linhas de Conexão */
 .line {
     position: absolute;

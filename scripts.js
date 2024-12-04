@@ -163,11 +163,11 @@ document.addEventListener("DOMContentLoaded", function() {
         persistentCompleteClinicalResponse: `
             <div class="container" data-item="persistent-complete-clinical-response" data-modal="persistentCompleteClinicalResponse">
             <div class="header-wrapper">
-                <div class="header">No Suregery Needed</div>
+                <div class="header">No Surgery Needed</div>
             </div>
             
             <div class="content" data-subtopic="first-topic">
-                <h3>No Suregery Needed:</h3>
+                <h3>No Surgery Needed:</h3>
                 <p>We will continue to follow you closely for at least 5
                     years. In more than 2/3 of patients will not have a
                     tumor regrowth and will not need any more
@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <ol>There are two main options:
                     <li>If your tumor invades the sphincter muscles in your anus, then we will need to remove your rectum and anus, and give you a permanent colostomy (i.e., stoma bag made from your colon).</li>
                     <li>If your tumour does NOT invade your sphincter muscles, then we will still
-                        remove your rectum, but a reconnection is usually possible (LINK TO BOX 7).
+                        remove your rectum, but a reconnection is usually possible.
                         
                         In this case, you will still need a temporary stoma called a diverting loop
                         ileostomy (i.e., a stoma made from your small intestine).</li>
@@ -273,7 +273,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <p>A low anterior resection with diverting loop ileostomy is a surgery where we will remove your rectum, reconnect the intestines, and make a temporary stoma bag.</p>
                 <p>This surgery can usually be done with the camera and small incisions (either laparoscopy or robot).</p>
                 <p>We will make a temporary stoma bag as part of this surgery. This is to protect the anastomosis (i.e., bowel connection) that we will make during the surgery. You will need another surgery to eventually close the stoma,usually at least 3 months after surgery but can be longer depending on your healing, recovery, and if you need more treatments.</p>
-                <p>It is important to know that your bowel movements once your stoma is closed will not be normal (LINK TO BOX 9). You will likely have many bowel movements with urgency and maybe even accidents. This can have a major negative impact on your activities, work, and quality of life.</p>
+                <p>It is important to know that your bowel movements once your stoma is closed will not be normal. You will likely have many bowel movements with urgency and maybe even accidents. This can have a major negative impact on your activities, work, and quality of life.</p>
             </div>
 
             <div class="content"  data-subtopic="hospital-stay" style="display:none;">
@@ -285,7 +285,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             <div class="content"  data-subtopic="surgical-risks" style="display:none;">
                 <h3>Surgical risks:</h3>
-                <p>The main risk from this surgery is an anastomotic leak. This iswhen your connection does not heal fully, and a hole can develop. This usually happens in the first 1-2 weeks after surgery. The treatment for this will depend on the size of the hole that develops. Usually the negative impact of a leak is lower because of your temporary stoma bag (LINK TO BOX 11) that diverts your stool away from the connection and hole.</p>
+                <p>The main risk from this surgery is an anastomotic leak. This iswhen your connection does not heal fully, and a hole can develop. This usually happens in the first 1-2 weeks after surgery. The treatment for this will depend on the size of the hole that develops. Usually the negative impact of a leak is lower because of your temporary stoma bag that diverts your stool away from the connection and hole.</p>
                 <p>About 30% of patients will have issues with their sexual and urinary function. This is because all of those nerves are exactly where we need to operate. These nerves are often too small to be seen and can be damaged during surgery.</p>
                 <p>Once your stoma bag is closed eventually and you are passing stool from your anus again, it is important to know that your bowel movements will NOT be normal. The severity of these symptoms depends on how close the connection is to your anus (in other words, how much rectum we have to remove).</p>
             </div>
@@ -451,7 +451,7 @@ document.addEventListener("DOMContentLoaded", function() {
         regularFollowups: `
             <div class="container" data-item="surgery" data-modal="surgery">
             <div class="header-wrapper">
-                <div class="header">Surgery Needed</div>
+                <div class="header">Regular Follow-Ups</div>
             </div>
             
             <div class="content" data-subtopic="first-topic">
@@ -467,22 +467,30 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
         `,
         noSurgeryNeededInitially: `
-            <div class="container" data-item="surgery" data-modal="surgery">
+            <div class="container" data-item="persistent-complete-clinical-response" data-modal="persistentCompleteClinicalResponse">
             <div class="header-wrapper">
                 <div class="header">No Surgery Needed Initially</div>
             </div>
             
             <div class="content" data-subtopic="first-topic">
-                <h3>Regular Follow-ups:</h3>
-                <p>Close follow-up is needed, especially in the first 2 years. This is to ensure that we catch any regrowth early so that it can be treated.</p>
-
-                <p>We need to look at the complete clinical response scar inside your rectum with a camera (sigmoidoscopy – can be done at the clinic or in the endoscopy suite) 4 times every year for the first 2 years</p>
-
-                <p>We also need to repeat your MRI two time per year for the first 2 years, then every year up to 5 years at least</p>
-
-                <p>You will also need a CT scan every year, and blood tests every 3-6 months up to at least 5 years.</p>
-                </div>
+                <h3>No Surgery Needed Initially:</h3>
+                <p>We will continue to follow you closely for at least 5
+                    years. In more than 2/3 of patients will not have a
+                    tumor regrowth and will not need any more
+                    treatment for their rectal cancer other than regular
+                    follow-ups.</p>
+                <p>We need to look at the complete clinical response
+                    scar inside your rectum with a camera
+                    (sigmoidoscopy – can be done at the clinic or in the
+                    endoscopy suite) 4 times every year for the first 2
+                    years</p>
+                <p>We also need to repeat your MRI two time per year
+                    for the first 2 years, then every year up to 5 years
+                    at least</p>
+                    <p>You will also need a CT scan every year, and blood
+                        tests every 3-6 months up to at least 5 years.</p>
             </div>
+        </div>
         `
     };
 
