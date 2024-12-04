@@ -468,7 +468,7 @@ body {
     filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.3));
 }
 /* Linhas de Conexão Esquerda */
-#line-1 { width: 73%; height: 12px; top: 50px; left: 50%; transform: translate(-50%);}
+#line-1 { width: 73%; height: 12px; top: 50px; left: 50%; transform: translate(-50%); border-top-right-radius:25px; border-top-left-radius:25px;}
 #line-2 { width: 12px; height: 200px; top: 50px; left:12.5%; border-top-left-radius: 10px;}
 #line-3 { width: 12px; height: 200px; top: 50px; right: 12.5%;border-top-right-radius: 10px;}
 #line-4 { width: 12px; height: 200px; top: 50px; left: 50%; transform: translateX(-50%); }
@@ -607,6 +607,11 @@ body {
     }
     #third-box-scenario, #incomplete-response, #surgery{
         right:6%;
+    }
+    .tooltip{
+        bottom:initial;
+        left:0;
+        top:-100px;
     }
 }
 
