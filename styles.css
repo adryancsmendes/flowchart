@@ -585,6 +585,7 @@ body {
         padding: 12px 6px;
         font-size:14px;
         font-weight: 600;
+        line-height:1.05;
     }
     .surgery-wrapper{
         max-width:155px;
