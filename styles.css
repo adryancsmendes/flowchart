@@ -442,8 +442,8 @@ body {
 #incomplete-response { top: 250px; right: 0%; }
 #surgery { top: 320px; right: 0;}
 #second-surgery { top: 450px; left:50%; transform: translate(-50%); z-index:3;}
-#surgery-lar { top: 400px; right:0; max-width:145px;}
-#surgery-apr { top: 400px; right: 150px;max-width:145px;}
+#surgery-lar { top: 375px; right:0; max-width:145px;}
+#surgery-apr { top: 375px; right: 150px;max-width:145px;}
 
 #second-surgery-lar { max-width:145px; position: relative;}
 #second-surgery-apr { max-width:145px; position: relative;}
@@ -456,7 +456,8 @@ body {
     position: absolute;
     left:50%;
     transform: translate(-50%);
-    top:530px;
+    top:510px;
+    z-index:5;
 }
 /* Linhas de Conexão */
 .line {
@@ -550,4 +551,84 @@ body {
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
+}
+
+#new-modal .modal-content{
+    max-width:600px;
+    background-color: #f2f2f2;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#new-modal .modal-content #new-modal-text{
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width:992px){
+    .flowchart{
+        max-width:480px;
+    }
+    #line-1{
+        width:73%;
+        left:47%;
+        
+    }
+    #line-2{
+        left:9.5%;
+        top:50px;
+    }
+    #line-3{
+        right:14.5%;
+    }
+    .box, .box-scenario, .sub-box, #surgery-apr, #surgery-lar, #second-surgery-apr, #second-surgery-lar{
+        max-width:100px;
+        padding: 12px 6px;
+        font-size:14px;
+        font-weight: 600;
+    }
+    .surgery-wrapper{
+        max-width:155px;
+    }
+    #surgery-apr, #surgery-lar, #second-surgery-apr, #second-surgery-lar{
+        max-width:75px;
+    }
+    #incomplete-response{
+        top:265px;
+    }
+    #surgery{
+        top:330px;
+    }
+    #surgery-apr{
+        right:80px;
+        top:390px;
+    }
+    #tumor-regrowth, #surgery-lar{
+        top:390px;
+    }
+    #third-box-scenario, #incomplete-response, #surgery{
+        right:6%;
+    }
+}
+
+@media screen and (max-width:480px){
+    #line-1{
+        width:73%;
+        left:50%;
+    }
+    #line-2{
+        left:12.5%;
+    }
+    #line-3{
+        right:12.5%;
+    }
+    #third-box-scenario, #incomplete-response, #surgery{
+        right:0;
+    }
+    #surgery-lar{
+        right:2%
+    }
+    #surgery-apr{
+        top:460px;
+        right:2%;
+    }
 }
